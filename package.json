@@ -1,0 +1,27 @@
+{
+  "name": "@ductuan15/wa-logger",
+  "version": "0.0.2",
+  "main": "./libs/cjs",
+  "module": "./libs/esm",
+  "files": [
+    "libs"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.0.0",
+    "eslint": "^7.30.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5",
+    "winston": "^3.3.3"
+  },
+  "scripts": {
+    "start": "ts-node ./test.ts",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "yarn tsc",
+    "test": "jest"
+  },
+  "dependencies": {}
+}
